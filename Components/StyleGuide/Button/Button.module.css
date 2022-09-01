@@ -1,0 +1,16 @@
+.primary {
+  width: 240px;
+  height: 80px;
+  background: #922323;
+}
+.secondary {
+  width: 240px;
+  height: 80px;
+  background: #ba6666;
+}
+
+.button {
+  width: 240px;
+  height: 80px;
+  background: #ba6666;
+}

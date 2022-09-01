@@ -1,0 +1,60 @@
+ @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap');
+/*
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: #F2F2F2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body{
+  font-size: 16px;
+} */
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+:root {
+  --base-font-size: 16;
+
+  /* palette colors */
+  --color-venetian: #cc1512;
+  --color-purple: purple;
+
+  --button-bg-color: var(--color-venetian);
+  --error-color: var(--color-purple);
+}
+
+body {
+  font-size: 16px;
+    font-family: 'Space Mono', monospace;
+}
+
+.App {
+  font-family: sans-serif;
+}

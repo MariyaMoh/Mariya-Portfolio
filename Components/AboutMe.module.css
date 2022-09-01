@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap');
+
+/* .MainCard {
+  text-align: center;
+  padding-top: 10%;
+  font-size: 48px;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.ProfileSection {
+  font-family: 'Space Mono', monospace;
+} */
+
+.AboutMe {
+  display: inline-flex;
+  flex-direction: column;
+  /* column-gap:10px; */
+  /* justify-content:start; 
+  */
+  /* margin: 1rem; */
+  /* padding-top: 2rem; */
+
+
+}
+/* 
+.EditorImageWrapper {
+  position: absolute;
+  background-color: transparent;
+  padding: 50px;
+
+  right: 10%;
+  bottom: -40%;
+}
+
+.EditorImageWrapper span {
+  overflow: visible !important;
+}
+
+.EditorImage {
+  
+  transform: rotate(30deg);
+  /* z-index: -1; */
+
+
+/* .twoCards {
+  display: flex;
+  flex-direction: row;
+} */
+/* .img{
+  border-radius: 3px;
+} */
+
+/* .img1:
+img1:hover {
+        background: url("/star2.svg") no-repeat;
+    
+} */

@@ -1,0 +1,9 @@
+.position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  /* font-size: clamp(0.1rem, 4vw, 20rem); */
+  /* letter-spacing: 5px; */
+}
