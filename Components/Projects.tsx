@@ -10,7 +10,7 @@ import {
   SectionTitle,
 } from '../Components/StyleGuide/Text';
 import { Container } from '../Components/StyleGuide/Container';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 import { motion } from 'framer-motion';
 export default function Projects({ abouts }: { abouts: About[] }) {
   return (
@@ -44,7 +44,7 @@ export default function Projects({ abouts }: { abouts: About[] }) {
       <div className={styles.title}>
         <Heading2 id="Experience">Projects</Heading2>
         <div>
-          <Spacer size={32} />
+        
           <motion.div
             className={styles.expCards}
 

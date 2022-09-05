@@ -11,7 +11,7 @@ import {
   SectionTitle,
 } from '../Components/StyleGuide/Text';
 import { Container } from '../Components/StyleGuide/Container';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 export default function ExperiencePage({
   experiences,
 }: {
@@ -24,7 +24,7 @@ export default function ExperiencePage({
           Experience
         </Heading2>
       </div>
-      <Spacer size={100} />
+      
       <div className={styles.expCards}>
         {experiences.map((experiences) => (
           <div key={experiences.id} className={styles.box}>

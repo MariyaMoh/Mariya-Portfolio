@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 import { motion } from 'framer-motion';
 import { Heading1, Heading4 } from '../Components/StyleGuide/Text';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 
 export const Header = () => (
   <header className={styles.header}>
@@ -19,7 +19,7 @@ export const Header = () => (
         </a>
       </Link>
     </motion.h1> */}
-    <Spacer size={50} />
+ 
     <Heading4 as="h1" data-aos="zoom-out-down">
       {' '}
       Mariya ALShaaibi

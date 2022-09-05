@@ -8,7 +8,7 @@ import {
   Heading4,
   SectionTitle,
 } from '../Components/StyleGuide/Text';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 import {
   PrimaryButton,
   SecondaryButton,
@@ -23,7 +23,7 @@ export default function movingtitle() {
           <Heading1>Front-end Developer</Heading1>
         </div>
 
-        <Spacer size={100} />
+        
         {/* <hr className={styles.line}></hr> */}
       </div>
       {/* <Image

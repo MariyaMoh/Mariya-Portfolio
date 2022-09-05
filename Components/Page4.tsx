@@ -8,13 +8,13 @@ import {
   Heading4,
   SectionTitle,
 } from '../Components/StyleGuide/Text';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 import styles from './Page4.module.css';
 import Image from 'next/image';
 export default function movingtitle() {
   return (
     <div>
-      <Spacer size={290} />
+      
       {/* <div className={styles.main}> */}
       {/* <h1>FRONT-END </h1> <br />
         <h1>DEVELOPER</h1> */}

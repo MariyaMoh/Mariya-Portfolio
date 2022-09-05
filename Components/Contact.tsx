@@ -8,8 +8,7 @@ import {
   Heading3,
   SectionTitle,
 } from '../Components/StyleGuide/Text';
-import { Container } from '../Components/StyleGuide/Container';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 
 export default function Contact() {
   return (

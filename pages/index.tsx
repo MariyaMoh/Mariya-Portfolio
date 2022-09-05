@@ -17,7 +17,7 @@ import {
   SectionTitle,
 } from '../Components/StyleGuide/Text';
 import { Container } from '../Components/StyleGuide/Container';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Page1 from '../Components/Page1';
 import Page2 from '../Components/Page1';

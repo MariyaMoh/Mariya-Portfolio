@@ -10,7 +10,7 @@ import {
   SectionTitle,
 } from '../Components/StyleGuide/Text';
 import { Container } from '../Components/StyleGuide/Container';
-import { Spacer } from '../Components/StyleGuide/Spacer';
+
 export default function ExperiencePage({
   experiences,
 }: {
@@ -23,7 +23,7 @@ export default function ExperiencePage({
           <Heading2 id="Experience" className={styles.exptitle}>
             Experience
           </Heading2>
-          <Spacer size={32} />
+         
           <div className={styles.expCards}>
             {experiences.map((experiences) => (
               <div key={experiences.id}>
@@ -45,7 +45,7 @@ export default function ExperiencePage({
 
                   {/* <Heading3>{experiences.description}</Heading3> */}
                 </Container>
-                <Spacer size={32} />
+               
               </div>
             ))}
           </div>
