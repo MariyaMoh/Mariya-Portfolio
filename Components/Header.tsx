@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
 import { motion } from 'framer-motion';
-import { Heading4 } from '../Components/StyleGuide/Text';
+import { Heading1, Heading4 } from '../Components/StyleGuide/Text';
 import { Spacer } from '../Components/StyleGuide/Spacer';
 
 export const Header = () => (
@@ -20,7 +20,10 @@ export const Header = () => (
       </Link>
     </motion.h1> */}
     <Spacer size={50} />
-    <Heading4 data-aos="zoom-out-down"> Mariya ALShaaibi</Heading4>
+    <Heading4 as="h1" data-aos="zoom-out-down">
+      {' '}
+      Mariya ALShaaibi
+    </Heading4>
 
     {/* <SectionTitle>Mariya ALShaaibi</SectionTitle> */}
   </header>

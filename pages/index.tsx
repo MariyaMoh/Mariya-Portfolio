@@ -49,10 +49,12 @@ HomeProps) {
             style={{
               backgroundColor: `var(--lemon-yellow)`,
               backgroundSize: 'cover',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
             }}
           >
             <Header />
-
             <Page1 />
           </ParallaxLayer>
 
@@ -76,7 +78,7 @@ HomeProps) {
               backgroundSize: 'cover',
             }}
           >
-            {/* <Projects abouts={abouts} /> */}
+            <Projects abouts={abouts} />
           </ParallaxLayer>
           <ParallaxLayer
             // sticky={{ start: 3, end: 4 }}
@@ -93,7 +95,7 @@ HomeProps) {
           </ParallaxLayer>
 
           <ParallaxLayer
-            sticky={{ start: 0.6, end: 1.3 }}
+            sticky={{ start: 0.6, end: 0.6 }}
             style={{ paddingLeft: '77rem' }}
           >
             <Image

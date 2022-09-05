@@ -18,31 +18,30 @@ export default function ExperiencePage({
   experiences: Experience[];
 }) {
   return (
-    <div style={{ padding: '4rem' }}>
-      <div>
-        <Heading2 id="Experience" className={styles.exptitle}>
+    <div style={{ padding: '4rem' }} className={styles.expContainer}>
+      <div className={styles.title}>
+        <Heading2 as="h1" id="Experience">
           Experience
         </Heading2>
-        <div className={styles.expCards}>
-          {experiences.map((experiences) => (
-            <div key={experiences.id} className={styles.box}>
-              <Container className={styles.container}>
-                <div className={styles.icon}>
-                  <img
-                    src={experiences.image.url}
-                    width={70}
-                    height={70}
-                    alt="d"
-                  />
-                </div>
-                <Heading4>{experiences.title}</Heading4>
-
-                {/* <Heading3>{experiences.description}</Heading3> */}
-              </Container>
-              {/* <Spacer size={32} /> */}
+      </div>
+      <Spacer size={100} />
+      <div className={styles.expCards}>
+        {experiences.map((experiences) => (
+          <div key={experiences.id} className={styles.box}>
+            {/* <Container className={styles.container}> */}
+            <div className={styles.icon}>
+              <img src={experiences.image.url} width={70} height={70} alt="d" />
             </div>
-          ))}
-        </div>
+<div className={styles.titleCard}>
+            <Heading4>{experiences.title}</Heading4>
+            </div>
+
+            {/* <Heading3>{experiences.description}</Heading3> */}
+            {/* </Container> */}
+            {/* <Spacer size={32} /> */}
+          </div>
+          
+        ))}
       </div>
     </div>
   );

@@ -9,12 +9,15 @@ import {
   SectionTitle,
 } from '../Components/StyleGuide/Text';
 import { Spacer } from '../Components/StyleGuide/Spacer';
-import { Primary } from '../Components/StyleGuide/Button';
+import {
+  PrimaryButton,
+  SecondaryButton,
+} from '../Components/StyleGuide/Button';
 import { motion } from 'framer-motion';
 export default function movingtitle() {
   return (
     <div>
-      <Spacer size={200} />
+      {/* <Spacer size={200} /> */}
       <div className={styles.position}>
         <div>
           <Heading1>Front-end Developer</Heading1>
@@ -30,6 +33,8 @@ export default function movingtitle() {
         height={100}
         alt="img"
       /> */}
+      {/* <PrimaryButton>CLICK</PrimaryButton>
+      <SecondaryButton>dh</SecondaryButton> */}
     </div>
   );
 }

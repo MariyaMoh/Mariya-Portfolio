@@ -1,7 +1,7 @@
 import s from './Button.module.css';
 const VARIANT = {
-  primary: 'primary',
-  secondary: 'secondary',
+  primary: 'primaryButton',
+  secondary: 'secondaryButton',
 };
 
 const Base = ({
@@ -20,10 +20,10 @@ const Base = ({
   //   </button>
 );
 
-export const Primary = (props) => (
+export const PrimaryButton = (props) => (
   <Base as="button" variant="primary" {...props} />
 );
 
-export const Secondary = (props) => (
+export const SecondaryButton = (props) => (
   <Base as="button" variant="secondary" {...props} />
 );

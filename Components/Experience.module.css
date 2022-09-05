@@ -7,34 +7,40 @@
 /* flex-direction: row; */
 /* justify-content: center; */
 
-.exptitle {
-
-}
-/*
-.expcard {
+.title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
-  margin: 0;
-  font-family: 'Space Mono', monospace;
-} */
-/* .aboutMesSection{
-  
-} */
-.container {
-  padding: 1rem;
-  /* background-color: #f3ceb4; */
-  /* margin: 10px; */
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  /* box-shadow: 0 15px 0 #746BEB; */
+}
 
-  /* display: flex;
+.expCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+}
+
+
+.expContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*
+.container {
+  /* padding: 1rem; */
+/* background-color: #f3ceb4; */
+/* margin: 10px; */
+/* width: 300px;
+  height: 300px;
+  border-radius: 20px; */
+/* box-shadow: 0 15px 0 #746BEB; */
+
+/* display: flex;
  justify-content: center; */
-  /* margin:1rem; */
-  /* margin-top: 1rem;
+/* margin:1rem; */
+/* margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,47 +49,42 @@
 
  
   border-radius: 50px; */
-  /* border-color: #333333;
+/* border-color: #333333;
   border-style: dotted; */
-}
-.aboutMesSection {
-  /* padding:10px; */
-}
+
 .expCards {
-  padding: 7rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-
-  justify-content: center;
-  /* box-shadow: 0 15px 0 #f3ceb4; */
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .icon {
   position: relative;
-  top: -32px;
+  /* top: -32px;
   right: -51px;
   width: 140px;
-  height: 100px;
-  background: #ffa07a;
+  height: 100px; */
+  /* background: #ffa07a;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  box-shadow: 0 10px 0 #edf022;
+  box-shadow: 0 10px 0 #edf022; */
+  padding: 4rem;
+ /* margin: 2rem; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  
 
   /* inset 0 -8 0 #fff ; */
   /* z-index: 1000; */
 }
-
+.titleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 600px) {
   .container {
     width: 14rem;
@@ -91,13 +92,14 @@
     display: block;
     /* width: 15rem; */
   }
+  .icon{
+     padding: 1.2rem;
+  }
+
+  .expCards{
+   
+  }
 }
 /* .p {
   font-size: clamp(45ch, 50%, 75ch);
-} */
-
-/* 
-.box{
- align-items: center;
-  
 } */

@@ -40,11 +40,9 @@ export default function Projects({ abouts }: { abouts: About[] }) {
     //     </div>
     //   </div>
     // </div>
-    <div style={{ padding: '4rem' }}>
-      <div>
-        <Heading2 id="Experience" className={styles.exptitle}>
-          Projects
-        </Heading2>
+    <div style={{ padding: '4rem' }} className={styles.proContainer}>
+      <div className={styles.title}>
+        <Heading2 id="Experience">Projects</Heading2>
         <div>
           <Spacer size={32} />
           <motion.div
@@ -57,7 +55,7 @@ export default function Projects({ abouts }: { abouts: About[] }) {
             {abouts.map((about) => (
               <div key={about.id}>
                 <Container className={styles.container}>
-                  <div className={styles.icon}>
+                  {/* <div className={styles.icon}>
                     <Image
                       className={styles.img1}
                       src="/m1.png"
@@ -65,16 +63,14 @@ export default function Projects({ abouts }: { abouts: About[] }) {
                       height={300}
                       alt="img"
                     />
-                  </div>
+                  </div> */}
 
-                  <div className={styles.desc}>
+                  {/* <div className={styles.desc}>
                     <Heading3>{about.experienceTitle}</Heading3>
                     <Spacer size={32} />
                     <Heading4>{about.description}</Heading4>
-                    <div>
-                      {/* <button>read more !</button> */}
-                    </div>
-                  </div>
+                    <div></div>
+                  </div> */}
                 </Container>
               </div>
             ))}

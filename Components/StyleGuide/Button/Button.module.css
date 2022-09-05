@@ -1,13 +1,19 @@
-.primary {
-  width: 240px;
-  height: 80px;
+.primaryButton {
   background: #7fbc8c;
   border: none;
   color: black;
-  padding: clamp(1rem, 1vw, 6rem);
+  padding-top: max(0.4rem, 1vw);
+  padding-left: max(0.4rem, 2vw);
+  padding-right: max(0.4rem, 2vw);
+  padding-bottom: max(0.4rem, 1vw);
+  line-height: 1;
 }
-.secondary {
-  width: 240px;
-  height: 80px;
+.secondaryButton {
+  padding-top: max(0.4rem, 1vw);
+  padding-left: max(0.4rem, 2vw);
+  padding-right: max(0.4rem, 2vw);
+  padding-bottom: max(0.4rem, 1vw);
   background: #ba6666;
+  border: none;
+  color: black;
 }
