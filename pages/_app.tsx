@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className={styles.PageContainer}>
-        <Header />
+        {/* <Header /> */}
         <Component key={router.asPath} {...pageProps} />
       </div>
     </AnimatePresence>

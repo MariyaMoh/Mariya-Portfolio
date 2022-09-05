@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
 import { motion } from 'framer-motion';
-import { Heading3 } from '../Components/StyleGuide/Text';
+import { Heading4 } from '../Components/StyleGuide/Text';
 import { Spacer } from '../Components/StyleGuide/Spacer';
 
 export const Header = () => (
   <header className={styles.header}>
-    <Spacer size={32} />
+    {/* <Spacer size={32} /> */}
     {/* <motion.h1
       transition={{ type: 'spring', velocity: 10, stiffness: 30 }}
       initial={{ x: -300, opacity: 0 }}
@@ -19,7 +19,9 @@ export const Header = () => (
         </a>
       </Link>
     </motion.h1> */}
-    <Heading3>Mariya ALShaaibi</Heading3>
+    <Spacer size={50} />
+    <Heading4 data-aos="zoom-out-down"> Mariya ALShaaibi</Heading4>
+
     {/* <SectionTitle>Mariya ALShaaibi</SectionTitle> */}
   </header>
 );

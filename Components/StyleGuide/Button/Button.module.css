@@ -1,15 +1,12 @@
 .primary {
   width: 240px;
   height: 80px;
-  background: #922323;
+  background: #7fbc8c;
+  border: none;
+  color: black;
+  padding: clamp(1rem, 1vw, 6rem);
 }
 .secondary {
-  width: 240px;
-  height: 80px;
-  background: #ba6666;
-}
-
-.button {
   width: 240px;
   height: 80px;
   background: #ba6666;

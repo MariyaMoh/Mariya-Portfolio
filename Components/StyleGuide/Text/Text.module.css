@@ -1,22 +1,27 @@
 .heading1 {
-  font-size: calc(48 / var(--base-font-size) * 1rem);
-  font-size: clamp(3rem, 8.2vw, 6rem);
+  /* font-size: calc(48 / var(--base-font-size) * 1rem); */
+  font-size: clamp(1rem, 7vw, 19rem);
   line-height: 0.96153846;
 }
 
 .heading2 {
-  font-size: calc(64 / 16 * 1rem);
-  font-size: clamp(2.5rem, 4.4vw, 3rem);
+  /* font-size: calc(64 / 16 * 1rem); */
+  font-size: clamp(1.5rem, 4.4vw, 3rem);
   line-height: 1;
 }
 .heading3 {
-  font-size: calc(80 / 16 * 1rem);
+  /* font-size: calc(80 / 16 * 1rem); */
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  line-height: 1;
+}
+.heading4 {
+  /* font-size: calc(80 / 16 * 1rem); */
   font-size: clamp(1rem, 4.4vw, 1rem);
   line-height: 1;
 }
 
 .sectionTitle {
-  font-size: calc(18 / 16 * 1rem);
+  /* font-size: calc(18 / 16 * 1rem); */
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 1;
   text-transform: uppercase;

@@ -4,16 +4,13 @@
   margin-bottom: 40px;
   margin-top: 10%;
   /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: center; */
+/* flex-direction: row; */
+/* justify-content: center; */
 
+.exptitle {
 
-/* .exptitle {
-  font-family: 'Space Mono', monospace;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
 }
+/*
 .expcard {
   display: flex;
   flex-direction: row;
@@ -26,10 +23,17 @@
   
 } */
 .container {
-  padding: 4rem;
-   background-color: #f3ceb4;
-   margin: 10px;
-   border-style: dotted;
+  padding: 1rem;
+  /* background-color: #f3ceb4; */
+  /* margin: 10px; */
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  /* box-shadow: 0 15px 0 #746BEB; */
+
+  /* display: flex;
+ justify-content: center; */
+  /* margin:1rem; */
   /* margin-top: 1rem;
   display: flex;
   flex-direction: row;
@@ -42,15 +46,58 @@
   /* border-color: #333333;
   border-style: dotted; */
 }
-
+.aboutMesSection {
+  /* padding:10px; */
+}
 .expCards {
+  padding: 7rem;
   display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  /* padding: 20px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+
   justify-content: center;
+  /* box-shadow: 0 15px 0 #f3ceb4; */
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  top: -32px;
+  right: -51px;
+  width: 140px;
+  height: 100px;
+  background: #ffa07a;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0 10px 0 #edf022;
+  display: flex;
+  justify-content: center;
+  
+
+  /* inset 0 -8 0 #fff ; */
+  /* z-index: 1000; */
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 14rem;
+    height: 14rem;
+    display: block;
+    /* width: 15rem; */
+  }
+}
 /* .p {
   font-size: clamp(45ch, 50%, 75ch);
-} */ 
+} */
+
+/* 
+.box{
+ align-items: center;
+  
+} */

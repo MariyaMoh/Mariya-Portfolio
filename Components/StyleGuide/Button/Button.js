@@ -1,11 +1,4 @@
 import s from './Button.module.css';
-// export default function Button({ children, onClick }) {
-//   return (
-//     <button onClick={onClick} className={s.button}>
-//       {children}
-//     </button>
-//   );}
-
 const VARIANT = {
   primary: 'primary',
   secondary: 'secondary',
@@ -27,10 +20,10 @@ const Base = ({
   //   </button>
 );
 
-export const primary = (props) => (
+export const Primary = (props) => (
   <Base as="button" variant="primary" {...props} />
 );
 
-export const secondary = (props) => (
+export const Secondary = (props) => (
   <Base as="button" variant="secondary" {...props} />
 );

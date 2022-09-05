@@ -12,15 +12,16 @@
 } */
 
 .AboutMe {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: center;
+  /* flex: 50%; */
   /* column-gap:10px; */
   /* justify-content:start; 
   */
   /* margin: 1rem; */
   /* padding-top: 2rem; */
-
-
 }
 /* 
 .EditorImageWrapper {
@@ -41,7 +42,6 @@
   transform: rotate(30deg);
   /* z-index: -1; */
 
-
 /* .twoCards {
   display: flex;
   flex-direction: row;
@@ -55,3 +55,16 @@ img1:hover {
         background: url("/star2.svg") no-repeat;
     
 } */
+
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 20px;
+  line-height: 30px; */
+
+  padding: 1rem;
+  color: #333333;
+  background: #f3ceb4;
+  border: none;
+}

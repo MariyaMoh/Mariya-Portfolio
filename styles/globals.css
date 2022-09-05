@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap'); */
 /*
 html {
   scroll-behavior: smooth;
@@ -29,13 +29,13 @@ a {
 body{
   font-size: 16px;
 } */
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 *,
 *:after,
 *:before {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -43,18 +43,40 @@ body{
   --base-font-size: 16;
 
   /* palette colors */
-  --color-venetian: #cc1512;
-  --color-purple: purple;
+  --lemon-yellow: #fffd50;
+  --light-salmon: #ffa07a;
+  --flavescent: #fff38c;
+  --turquoise-green: #9ecfc2;
 
-  --button-bg-color: var(--color-venetian);
-  --error-color: var(--color-purple);
+  --page1-bg-color: var(--lemon-yellow);
+  --page2-bg-color: var(--light-salmon);
+  --page2-bg-color: var(--flavescent);
+  --page2-bg-color: var(--turquoise-green);
 }
 
 body {
   font-size: 16px;
-    font-family: 'Space Mono', monospace;
+
+  font-family: 'Barlow', sans-serif;
 }
 
 .App {
-  font-family: sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
+
+
+/* .imgg{
+  background-color: rgb(148, 163, 176);
+  padding-left: 50rem;
+
+} */
+
+
+
+@media screen and (max-width: 600px) {
+  .imgg {
+   
+    padding: 10rem;
+
+
+}}

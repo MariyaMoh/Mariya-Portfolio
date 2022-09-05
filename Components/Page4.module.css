@@ -1,0 +1,24 @@
+.position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  /* margin: 2rem; */
+}
+.imgg {
+  transform: rotate(-90deg);
+}
+
+/* .maincon{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+/* .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14rem;
+  /* margin: 5rem; */
+

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap');
 .header {
-  /* padding: 20px; */
   display: flex;
   justify-content: center;
-  font-family: 'Space Mono', monospace;
-  /* position: fixed; */
   align-items: center;
+  position: sticky;
+  top: 0;
+  /* backdrop-filter: blur(10px); */
 }
 
 /* .logo {
