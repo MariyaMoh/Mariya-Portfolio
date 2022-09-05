@@ -32,7 +32,7 @@ export default function movingtitle() {
             Get In Touch
           </Heading2>
         </Link>
-{/* 
+        {/* 
         <div className={styles.links}>
           <Link href="https://www.linkedin.com/in/mariya-alshaaibi-b6121a1a4/">
             <Heading4>Linkdin</Heading4>

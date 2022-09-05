@@ -6,7 +6,6 @@ import { Profile } from '../types';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Heading3, SectionTitle } from '../Components/StyleGuide/Text';
-import { Primary } from '../Components/StyleGuide/Button';
 import { Spacer } from '../Components/StyleGuide/Spacer';
 import { Grid, Card, Text } from '@nextui-org/react';
 // import {
