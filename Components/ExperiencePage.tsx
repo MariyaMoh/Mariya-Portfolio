@@ -24,7 +24,7 @@ export default function ExperiencePage({
           Experience
         </Heading2>
       </div>
-      
+
       <div className={styles.expCards}>
         {experiences.map((experiences) => (
           <div key={experiences.id} className={styles.box}>
@@ -32,15 +32,14 @@ export default function ExperiencePage({
             <div className={styles.icon}>
               <img src={experiences.image.url} width={70} height={70} alt="d" />
             </div>
-<div className={styles.titleCard}>
-            <Heading4>{experiences.title}</Heading4>
+            <div className={styles.titleCard}>
+              <Heading4>{experiences.title}</Heading4>
             </div>
 
             {/* <Heading3>{experiences.description}</Heading3> */}
             {/* </Container> */}
             {/* <Spacer size={32} /> */}
           </div>
-          
         ))}
       </div>
     </div>

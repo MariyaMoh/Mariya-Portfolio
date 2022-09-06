@@ -14,17 +14,19 @@
 }
 
 .expCards {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', monospace; */
 }
 
-
-.expContainer{
+.expContainer {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /*
@@ -71,7 +73,7 @@
   border-bottom-right-radius: 100px;
   box-shadow: 0 10px 0 #edf022; */
   padding: 4rem;
- /* margin: 2rem; */
+  /* margin: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,11 +94,9 @@
     display: block;
     /* width: 15rem; */
   }
-  .icon{
-     padding: 1.2rem;
+  .icon {
+    padding: 1.2rem;
   }
-
-
 }
 /* .p {
   font-size: clamp(45ch, 50%, 75ch);

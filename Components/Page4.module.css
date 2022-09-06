@@ -1,24 +1,28 @@
 .position {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
-  /* margin: 2rem; */
+  
+
 }
 .imgg {
   transform: rotate(-90deg);
 }
 
-/* .maincon{
+.links{
    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
-/* .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 14rem;
-  /* margin: 5rem; */
-
+  cursor: pointer;
+  
+}

@@ -43,6 +43,7 @@ export default function Projects({ abouts }: { abouts: About[] }) {
     <div style={{ padding: '4rem' }} className={styles.proContainer}>
       <div className={styles.title}>
         <Heading2 id="Experience">Projects</Heading2>
+        </div>
         <div>
         
           <motion.div
@@ -76,7 +77,7 @@ export default function Projects({ abouts }: { abouts: About[] }) {
             ))}
           </motion.div>
         </div>
-      </div>
+      
     </div>
   );
 }
