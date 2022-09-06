@@ -16,16 +16,10 @@ export default function movingtitle() {
     <div className={styles.footer}>
       <div className={styles.position}>
         <Link href="mailto:alshaibi199732@gmail.com">
-          <Heading2 className={styles.contacttitle}>
-            <Image
-              className={styles.imgg}
-              src="/arrow.gif"
-              width={80}
-              height={80}
-              alt="img"
-            />
+          <Heading1 className={styles.contacttitle}>
+            <img className={styles.imgg} src="/arrow.gif" alt="img" />
             Get In Touch
-          </Heading2>
+          </Heading1>
         </Link>
       </div>
       <div className={styles.links}>
