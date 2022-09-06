@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 14rem;
 }
 .imgg {
   transform: rotate(-90deg);
@@ -16,6 +15,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  align-self: flex-end;
   /* justify-content: space-around; */
   /* margin: 2rem; */
 }
