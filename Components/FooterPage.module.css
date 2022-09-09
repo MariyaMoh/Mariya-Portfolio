@@ -3,10 +3,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* padding: 15rem; */
 }
 .imgg {
   transform: rotate(-90deg);
-  width: 9rem;
+  width: 7rem;
 }
 
 .links {
@@ -16,10 +17,15 @@
   justify-content: center;
   gap: 2rem;
   align-self: flex-end;
-  /* justify-content: space-around; */
-  /* margin: 2rem; */
+  position: absolute;
+  bottom: 10px;
 }
-
+.LinkedInLink:hover {
+  color: white;
+}
+.GitHubLink:hover {
+  color: white;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -29,9 +35,23 @@
   height: 100vh;
 }
 
+
+
+.GetHover{
+  overflow: hidden;
+}
+.GetHover:hover{
+  margin-top: -70px;
+}
+.contacttitle{
+
+
+ transition: all 0.5s ease 0.5s
+}
+
 @media screen and (max-width: 600px) {
   .position {
-    padding: 4rem;
+    /* padding: 4rem; */
   }
   .imgg {
     width: 3rem;

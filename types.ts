@@ -18,15 +18,6 @@ export interface Profile {
   id: string;
 }
 
-// export interface Aboutt {
-//   aboutts: {
-//     url: string;
-//   };
-//   slug: string;
-//   aboutt: string;
-//   id: string;
-// }
-
 export interface About {
   image: {
     url: string;

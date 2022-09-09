@@ -1,0 +1,65 @@
+.expCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.desc {
+  padding: 0.5rem;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.ContainerP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.proContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  background: linear-gradient(to right #ffffff);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  width: 20rem;
+  /* 
+  margin-bottom: 0 auto; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* 
+  min-height: 100vh; */
+}
+
+.proContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imggg {
+  width: 150px;
+}
+
+@media screen and (min-width: 600px) {
+  .MainCon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+  }
+  .imggg {
+    width: 100px;
+  }
+}

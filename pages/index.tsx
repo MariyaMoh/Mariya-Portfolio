@@ -1,50 +1,31 @@
 import { gql } from '@apollo/client';
 import client from '../apolloClient';
-import styles from './index.module.css';
 import ExperiencePage from '../Components/ExperiencePage';
-// import Services from '../Components/Services';
-import { Experience, Profile, About /* Aboutt  */ } from '../types';
-import ProfileSection from '../Components/AboutMe';
-import Footer from '../Components/Footer';
-import Contact from '../Components/Contact';
-import Movingtitle from '../Components/movingtitle';
+import { Experience, Profile, About } from '../types';
 import Image from 'next/image';
-import Projects from '../Components/Projects';
-import {
-  Heading1,
-  Heading2,
-  Heading3,
-  SectionTitle,
-} from '../Components/StyleGuide/Text';
-import { Container } from '../Components/StyleGuide/Container';
+import Projects from '../Components/ProjectPage';
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Page1 from '../Components/Page1';
-import Page2 from '../Components/Page1';
-import Page4 from '../Components/Page4';
+import HeroPage from '../Components/HeroPage';
+import FooterPage from '../Components/FooterPage';
 import { Header } from '../Components/Header';
+import ContactForm from './ContactForm';
+
 interface HomeProps {
   experiences: Experience[];
   profiles: Profile[];
-  // aboutts: Aboutt[];
+
   abouts: About[];
 }
 
-export default function Home({
-  experiences,
-  profiles,
-  abouts,
-}: // aboutts,
-HomeProps) {
-  // console.log(abouts);
-
+export default function Home({ experiences, profiles, abouts }: HomeProps) {
   return (
     <>
       <div>
-        <Parallax pages={2.5}>
+        <Parallax pages={5} style={{ top: '0', left: '0' }}>
           <ParallaxLayer
             offset={0}
-            speed={1}
+            // speed={3}
             factor={1}
             style={{
               backgroundColor: `var(--lemon-yellow)`,
@@ -55,24 +36,24 @@ HomeProps) {
             }}
           >
             <Header />
-            <Page1 />
+            <HeroPage />
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={0.999}
-            speed={1}
+            offset={1}
+            // speed={2}
             // factor={1}
             style={{
-              backgroundColor: `var(--light-salmon)`,
+              backgroundColor: '#FFDEB4',
               backgroundSize: 'cover',
             }}
           >
             <ExperiencePage experiences={experiences} />
           </ParallaxLayer>
           <ParallaxLayer
-            offset={1}
-            speed={1}
-            // factor={1}
+            offset={2}
+            // speed={0.5}
+            factor={2}
             style={{
               backgroundColor: `var(--flavescent)`,
               backgroundSize: 'cover',
@@ -82,19 +63,22 @@ HomeProps) {
           </ParallaxLayer>
           <ParallaxLayer
             // sticky={{ start: 3, end: 4 }}
-            offset={1.999}
-            speed={1}
+            offset={4}
+            // offset={3}
+            // speed={0.5}
             // factor={1}
-            factor={1.5}
+            // factor={1}
             style={{
-              backgroundColor: `var(--turquoise-green)`,
+              backgroundColor: '#B2A4FF',
               backgroundSize: 'cover',
             }}
           >
-            <Page4 />
+            <FooterPage />
+            {/* <ContactForm /> */}
+            {/* <Cards /> */}
           </ParallaxLayer>
 
-          <ParallaxLayer
+          {/* <ParallaxLayer
             sticky={{ start: 0.6, end: 0.6 }}
             style={{ paddingLeft: '77rem' }}
           >
@@ -105,56 +89,9 @@ HomeProps) {
               height={80}
               alt="img"
             />
-          </ParallaxLayer>
-
-          {/* <ParallaxLayer
-            sticky={{ start: 1.6, end: 1.8 }}
-            style={{ paddingLeft: '10rem' }}
-          >
-            <Heading2>E</Heading2>
-          </ParallaxLayer> */}
-
-          {/* <ParallaxLayer
-            sticky={{ start: 2.5, end: 2.7 }}
-            style={{ paddingLeft: '10rem' }}
-          >
-            <Heading1>P</Heading1>
           </ParallaxLayer> */}
         </Parallax>
       </div>
-
-      {/* <Container> */}
-      {/* <Movingtitle /> */}
-      {/* <Spacer size={32} /> */}
-      {/* <Spacer size={32} /> */}
-      {/* <Heading1>Heading 1</Heading1> */}
-      {/* <ProfileSection profiles={profiles} /> */}
-      {/* <Spacer size={32} /> */}
-      {/* <Heading2>Heading 2</Heading2> */}
-      {/* <Spacer size={32} />
-        <SectionTitle>Colors</SectionTitle>
-        <Spacer size={32} /> */}
-      {/* <div
-          style={{ padding: '50px', backgroundColor: `var(--color-purple)` }}
-        ></div>
-        <Spacer size={16} />
-        <div
-          style={{ padding: '50px', backgroundColor: `var(--color-venetian)` }}
-        ></div> */}
-      {/* <Spacer size={32} /> */}
-
-      {/* <ExperiencePage experiences={experiences} /> */}
-      {/* <Projects abouts={abouts} /> */}
-      {/* <Contact /> */}
-      {/* </Container> */}
-      {/* <Movingtitle about={aboutts} /> */}
-
-      {/* <ProfileSection profiles={profiles} /> */}
-      {/* <ExperiencePage experiences={experiences} /> */}
-      {/* <Projects abouts={abouts} /> */}
-
-      {/* <Contact /> */}
-      {/* <Footer /> */}
     </>
   );
 }
@@ -192,20 +129,15 @@ export async function getStaticProps() {
             url
           }
         }
-
-        aboutts {
-          aboutt
-        }
       }
     `,
   });
   console.log(data);
-  const { experiences, profiles, abouts, aboutts } = data;
+  const { experiences, profiles, abouts } = data;
   return {
     props: {
       experiences,
       profiles,
-      aboutts,
       abouts,
     },
   };
