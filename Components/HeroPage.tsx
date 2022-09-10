@@ -11,18 +11,39 @@ import {
 
 import { PrimaryButton, SecondaryButton } from './StyleGuide/Button';
 import { motion } from 'framer-motion';
+import { ParallaxLayer } from '@react-spring/parallax';
 export default function HeroPage() {
   return (
-    <div>
-      <div className={styles.position}>
-        <div
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="5000"
-        >
-          <Heading1>Front-end Developer</Heading1>
-        </div>
-      </div>
+    <div className={styles.position}>
+      <ParallaxLayer
+        speed={2}
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          padding: '2rem',
+          alignItems: 'center',
+        }}
+      >
+        {/* <div className={styles.position}> */}
+        {/* <div> */}
+        <Heading1>Front-end Developer</Heading1>
+        {/* </div> */}
+        {/* </div> */}
+      </ParallaxLayer>
+      <ParallaxLayer
+        speed={2}
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          padding: '2rem',
+          alignItems: 'flex-start',
+        }}
+      >
+        <Heading4 as="h1">Mariya ALShaaibi</Heading4>
+      </ParallaxLayer>
+
       <div className={styles.imggg}>
         <Image
           className="imgg"

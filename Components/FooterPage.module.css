@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* padding: 15rem; */
+  padding: 10rem;
 }
 .imgg {
   transform: rotate(-90deg);
@@ -16,8 +16,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
-  align-self: flex-end;
-  position: absolute;
+  /* align-items: flex-end; */
+  /* position: absolute; */
   bottom: 10px;
 }
 .LinkedInLink:hover {
@@ -35,23 +35,22 @@
   height: 100vh;
 }
 
-
-
+/* 
 .GetHover{
   overflow: hidden;
 }
 .GetHover:hover{
   margin-top: -70px;
-}
-.contacttitle{
+} */
+/* .contacttitle{
 
 
  transition: all 0.5s ease 0.5s
-}
+} */
 
 @media screen and (max-width: 600px) {
   .position {
-    /* padding: 4rem; */
+    padding: 4rem;
   }
   .imgg {
     width: 3rem;

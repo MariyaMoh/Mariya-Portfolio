@@ -1,21 +1,11 @@
 import { useState } from 'react';
 
-
-
-
-
 export default function ContactForm() {
-
   const [contacts, setContacts] = useState([]);
   const [contact, setContact] = useState('');
-  const featchContacts = async () => {
-    const response = await fetch('/api/contacts');
-    const data = await response.json();
-    setContacts(data);
-  };
 
   const submitContact = async () => {
-    const response = await fetch('/api/contacts', {
+    const response = await fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify({ contact }),
       Headers: {

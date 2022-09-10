@@ -1,9 +1,9 @@
 .position {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem;
+  /* flex-wrap: wrap; */
+  /* padding: 2rem; */
 }
 .imggg {
   display: flex;

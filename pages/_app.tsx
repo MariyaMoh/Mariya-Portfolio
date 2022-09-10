@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { AnimatePresence } from 'framer-motion';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
@@ -14,12 +15,28 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   }, []);
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      <div className={styles.PageContainer}>
-        {/* <Header /> */}
-        <Component key={router.asPath} {...pageProps} />
-      </div>
-    </AnimatePresence>
+    <>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-240627554-1"
+      ></Script>
+      <Script id="my-script">
+        {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-240627554-1');
+  `}
+      </Script>
+
+      <AnimatePresence exitBeforeEnter>
+        <div className={styles.PageContainer}>
+          {/* <Header /> */}
+          <Component key={router.asPath} {...pageProps} />
+        </div>
+      </AnimatePresence>
+    </>
   );
 }
 

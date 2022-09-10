@@ -26,6 +26,7 @@ export interface About {
   description: string;
   id: string;
   slug: string;
+  // githubLink:string;
   // imgage: {
   //    url: string;
   // }

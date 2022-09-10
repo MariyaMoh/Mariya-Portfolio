@@ -10,11 +10,11 @@ import HeroPage from '../Components/HeroPage';
 import FooterPage from '../Components/FooterPage';
 import { Header } from '../Components/Header';
 import ContactForm from './ContactForm';
+import AboutMe from '../Components/AboutMe';
 
 interface HomeProps {
   experiences: Experience[];
   profiles: Profile[];
-
   abouts: About[];
 }
 
@@ -35,8 +35,9 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
               justifyContent: 'center',
             }}
           >
-            <Header />
+            {/* <Header /> */}
             <HeroPage />
+            <AboutMe profiles={profiles} />
           </ParallaxLayer>
 
           <ParallaxLayer
@@ -74,8 +75,6 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
             }}
           >
             <FooterPage />
-            {/* <ContactForm /> */}
-            {/* <Cards /> */}
           </ParallaxLayer>
 
           {/* <ParallaxLayer
@@ -123,8 +122,10 @@ export async function getStaticProps() {
         abouts {
           experienceTitle
           description
+
           id
           slug
+
           image {
             url
           }
