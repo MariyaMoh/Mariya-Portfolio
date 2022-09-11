@@ -17,49 +17,39 @@ import { PrimaryButton } from './StyleGuide/Button';
 export default function Projects({ abouts }: { abouts: About[] }) {
   return (
     <>
-      <ParallaxLayer
-        speed={1}
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '2rem',
-          alignItems: 'center',
-        }}
-      >
-        <div className={styles.title}>
-          <Heading2 id="Experience">Projects</Heading2>
-        </div>
+      <div>
+        <ParallaxLayer
+          speed={1}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            padding: '2rem',
+            alignItems: 'center',
+          }}
+        >
+          <div className={styles.title}>
+            <Heading2 id="Experience">Projects</Heading2>
+          </div>
 
-        <div className={styles.MainCon}>
-          {abouts.map((about) => (
-            <div key={about.id} className={styles.expCards}>
-              <div className={styles.proContainer}>
-                {/* <div className={styles.icon}>
-                <img
-                  className={styles.img1}
-                  src="/m1.png"
-                  width={150}
-                  height={150}
-                  alt="img"
-                />
-              </div> */}
+          <div className={styles.MainCon}>
+            {abouts.map((about) => (
+              <div key={about.id} className={styles.expCards}>
+                <div className={styles.proContainer}>
+                  <img className={styles.imggg} src={about.image.url} alt="d" />
 
-                <img className={styles.imggg} src={about.image.url} alt="d" />
+                  <div className={styles.desc}>
+                    <Heading3>{about.experienceTitle}</Heading3>
 
-                <div className={styles.desc}>
-                  <Heading3 className={styles.heading_title}>
-                    {about.experienceTitle}
-                  </Heading3>
-
-                  <p className={styles.descc}>{about.description}</p>
+                    <p className={styles.descc}>{about.description}</p>
+                  </div>
+                  <PrimaryButton>Read More</PrimaryButton>
                 </div>
-                {/* <PrimaryButton>{about.githubLink}</PrimaryButton> */}
               </div>
-            </div>
-          ))}
-        </div>
-      </ParallaxLayer>
+            ))}
+          </div>
+        </ParallaxLayer>
+      </div>
     </>
   );
 }

@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
+  
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-240627554-1"

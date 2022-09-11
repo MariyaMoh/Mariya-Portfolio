@@ -9,9 +9,6 @@ export interface Experience {
 }
 
 export interface Profile {
-  profileImage: {
-    url: string;
-  };
   name: string;
   position: string;
   slug: string;

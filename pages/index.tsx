@@ -9,7 +9,6 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import HeroPage from '../Components/HeroPage';
 import FooterPage from '../Components/FooterPage';
 import { Header } from '../Components/Header';
-import ContactForm from './ContactForm';
 import AboutMe from '../Components/AboutMe';
 
 interface HomeProps {
@@ -22,7 +21,7 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
   return (
     <>
       <div>
-        <Parallax pages={5} style={{ top: '0', left: '0' }}>
+        <Parallax pages={4} style={{ top: '0', left: '0' }}>
           <ParallaxLayer
             offset={0}
             // speed={3}
@@ -37,13 +36,24 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
           >
             {/* <Header /> */}
             <HeroPage />
-            <AboutMe profiles={profiles} />
           </ParallaxLayer>
 
           <ParallaxLayer
             offset={1}
+            // speed={0.5}
+            // factor={2}
+            style={{
+              backgroundColor: `var(--flavescent)`,
+              backgroundSize: 'cover',
+            }}
+          >
+            <AboutMe />
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={2}
             // speed={2}
-            // factor={1}
+            factor={2}
             style={{
               backgroundColor: '#FFDEB4',
               backgroundSize: 'cover',
@@ -52,9 +62,9 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
             <ExperiencePage experiences={experiences} />
           </ParallaxLayer>
           <ParallaxLayer
-            offset={2}
+            offset={4}
             // speed={0.5}
-            factor={2}
+            // factor={2}
             style={{
               backgroundColor: `var(--flavescent)`,
               backgroundSize: 'cover',
@@ -64,7 +74,7 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
           </ParallaxLayer>
           <ParallaxLayer
             // sticky={{ start: 3, end: 4 }}
-            offset={4}
+            offset={5}
             // offset={3}
             // speed={0.5}
             // factor={1}
@@ -110,9 +120,6 @@ export async function getStaticProps() {
         }
 
         profiles {
-          profileImage {
-            url
-          }
           name
           position
           slug
