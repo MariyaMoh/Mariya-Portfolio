@@ -9,7 +9,7 @@ const mailgun = () =>
 export default function handler(req, res) {
   res.status(200).json({ name: 'John Doe' });
   const { messsage, email } = req.body;
-
+  console.log(req.body);
   mailgun()
     .messages()
     .send(
