@@ -2,8 +2,8 @@ const mg = require('mailgun-js');
 
 const mailgun = () =>
   mg({
-    key: `MAILGUN_API_KEY`,
-    domain: `MAILGUN_DOMAIN`,
+    key: '1f0df2402932469fbf82576ca653d548-07a637b8-6fbf777c',
+    domain: '1sandbox9011d08e70e4426aa0582055b64dff27.mailgun.org',
   });
 
 export default function handler(req, res) {
