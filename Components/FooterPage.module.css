@@ -26,7 +26,7 @@
 .GitHubLink:hover {
   color: white;
 }
-.footer {
+.footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;

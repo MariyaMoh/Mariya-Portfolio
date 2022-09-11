@@ -54,11 +54,11 @@ export default function AboutMe() {
           <Heading2>About Me</Heading2>
         </div>
 
-        <Heading4>
+        <p>
           Hey ! I ma Mariya , highly-motivated and creative software developer
           with robust problem-solving skills. Passionate about learning and
           consistently advancing my knowledge and skills.
-        </Heading4>
+        </p>
       </div>
     </ParallaxLayer>
   );

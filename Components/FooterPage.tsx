@@ -1,11 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiOutlineArrowRight } from 'react-icons/ai';
-// import { Aboutt } from '../types';
-import { Heading1, Heading2, Heading4, SectionTitle } from './StyleGuide/Text';
+import { Heading1, Heading4 } from './StyleGuide/Text';
 import { ParallaxLayer } from '@react-spring/parallax';
 import styles from './FooterPage.module.css';
-import Image from 'next/image';
+
 export default function FooterPage() {
   return (
     <ParallaxLayer
@@ -18,7 +16,7 @@ export default function FooterPage() {
         alignItems: 'center',
       }}
     >
-      <div className={styles.footer}>
+      <div className={styles.footerContainer}>
         <div data-aos="zoom-in" className={styles.position}>
           <img className={styles.imgg} src="/arrow.gif" alt="img" />
           {/* <Link href="mailto:alshaibi199732@gmail.com">

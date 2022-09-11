@@ -2,15 +2,7 @@ import React from 'react';
 import { Experience } from '../types';
 import styles from './ExperiencePage.module.css';
 import { ParallaxLayer } from '@react-spring/parallax';
-import Image from 'next/image';
-import {
-  Heading1,
-  Heading2,
-  Heading4,
-  Heading3,
-  SectionTitle,
-} from '../Components/StyleGuide/Text';
-import { Container } from '../Components/StyleGuide/Container';
+import { Heading2, Heading4 } from '../Components/StyleGuide/Text';
 
 export default function ExperiencePage({
   experiences,
@@ -24,7 +16,7 @@ export default function ExperiencePage({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        padding: '2rem',
+        // padding: '6rem',
         alignItems: 'center',
       }}
     >
@@ -41,7 +33,7 @@ export default function ExperiencePage({
           className={styles.expCards}
         >
           {experiences.map((experiences) => (
-            <div key={experiences.id} className={styles.box}>
+            <div key={experiences.id}>
               <div className={styles.icon} data-aos="zoom-in-up">
                 <img
                   src={experiences.image.url}
@@ -53,8 +45,6 @@ export default function ExperiencePage({
               <div data-aos="zoom-out-left" className={styles.titleCard}>
                 <Heading4>{experiences.title}</Heading4>
               </div>
-
-              {/* <Heading3>{experiences.description}</Heading3> */}
             </div>
           ))}
         </div>

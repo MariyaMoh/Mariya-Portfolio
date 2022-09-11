@@ -26,8 +26,6 @@ export default function HeroPage() {
           <Heading4 as="h1">Mariya ALShaaibi</Heading4>
         </div>
         <Heading1>Front-end Developer</Heading1>
-        {/* </div> */}
-        {/* </div> */}
       </ParallaxLayer>
       <ParallaxLayer
         speed={2}
@@ -48,7 +46,6 @@ export default function HeroPage() {
             alt="img"
           />
         </div>
-        
       </ParallaxLayer>
     </div>
   );

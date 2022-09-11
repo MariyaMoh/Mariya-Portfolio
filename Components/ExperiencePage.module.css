@@ -10,29 +10,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* flex-wrap: wrap; */
+
   align-items: center;
-  /* transition: all 0.2s ease-in-out; */
 }
 
 .icon {
   background-color: burlywood;
   border-radius: 1rem;
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 4rem;
   margin: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* transition: all 0.2s ease-in-out; */
-  /* inset 0 -8 0 #fff ; */
-  /* z-index: 1000; */
 }
-/* .icon:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
-
 .titleCard {
   display: flex;
   flex-direction: column;
@@ -48,18 +40,14 @@
     width: 14rem;
     height: 14rem;
     display: block;
-    /* width: 15rem; */
   }
   .icon {
-    padding: 0.1rem;
+    padding: 2rem;
   }
   .expCards {
     flex-direction: column;
   }
-  .title{
-       padding: 1rem;
+  .title {
+    padding: 1rem;
   }
 }
-/* .p {
-  font-size: clamp(45ch, 50%, 75ch);
-} */

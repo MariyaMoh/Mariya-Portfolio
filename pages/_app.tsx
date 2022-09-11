@@ -2,7 +2,6 @@ import '../styles/globals.css';
 import { NextUIProvider } from '@nextui-org/react';
 import type { AppProps } from 'next/app';
 import styles from '../styles/Home.module.css';
-import { Header } from '../Components/Header';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -16,7 +15,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
-  
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-240627554-1"
@@ -33,7 +31,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
       <AnimatePresence exitBeforeEnter>
         <div className={styles.PageContainer}>
-          {/* <Header /> */}
           <Component key={router.asPath} {...pageProps} />
         </div>
       </AnimatePresence>

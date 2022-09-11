@@ -2,13 +2,10 @@ import { gql } from '@apollo/client';
 import client from '../apolloClient';
 import ExperiencePage from '../Components/ExperiencePage';
 import { Experience, Profile, About } from '../types';
-import Image from 'next/image';
 import Projects from '../Components/ProjectPage';
-
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import HeroPage from '../Components/HeroPage';
 import FooterPage from '../Components/FooterPage';
-import { Header } from '../Components/Header';
 import AboutMe from '../Components/AboutMe';
 
 interface HomeProps {
@@ -17,15 +14,13 @@ interface HomeProps {
   abouts: About[];
 }
 
-export default function Home({ experiences, profiles, abouts }: HomeProps) {
+export default function Home({ experiences, abouts }: HomeProps) {
   return (
     <>
       <div>
-        <Parallax pages={4} style={{ top: '0', left: '0' }}>
+        <Parallax pages={6} style={{ top: '0', left: '0' }}>
           <ParallaxLayer
             offset={0}
-            // speed={3}
-            factor={1}
             style={{
               backgroundColor: `var(--lemon-yellow)`,
               backgroundSize: 'cover',
@@ -34,14 +29,11 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
               justifyContent: 'center',
             }}
           >
-            {/* <Header /> */}
             <HeroPage />
           </ParallaxLayer>
 
           <ParallaxLayer
             offset={1}
-            // speed={0.5}
-            // factor={2}
             style={{
               backgroundColor: `var(--flavescent)`,
               backgroundSize: 'cover',
@@ -52,8 +44,13 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
 
           <ParallaxLayer
             offset={2}
-            // speed={2}
-            factor={2}
+            style={{
+              backgroundColor: '#FFDEB4',
+              backgroundSize: 'cover',
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={3}
             style={{
               backgroundColor: '#FFDEB4',
               backgroundSize: 'cover',
@@ -63,22 +60,29 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
           </ParallaxLayer>
           <ParallaxLayer
             offset={4}
-            // speed={0.5}
-            // factor={2}
+            style={{
+              backgroundColor: '#FFDEB4',
+              backgroundSize: 'cover',
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={5}
             style={{
               backgroundColor: `var(--flavescent)`,
               backgroundSize: 'cover',
             }}
           >
             <Projects abouts={abouts} />
+            <ParallaxLayer
+              offset={6}
+              style={{
+                backgroundColor: '#FFDEB4',
+                backgroundSize: 'cover',
+              }}
+            ></ParallaxLayer>
           </ParallaxLayer>
           <ParallaxLayer
-            // sticky={{ start: 3, end: 4 }}
-            offset={5}
-            // offset={3}
-            // speed={0.5}
-            // factor={1}
-            // factor={1}
+            offset={7}
             style={{
               backgroundColor: '#B2A4FF',
               backgroundSize: 'cover',
@@ -86,19 +90,6 @@ export default function Home({ experiences, profiles, abouts }: HomeProps) {
           >
             <FooterPage />
           </ParallaxLayer>
-
-          {/* <ParallaxLayer
-            sticky={{ start: 0.6, end: 0.6 }}
-            style={{ paddingLeft: '77rem' }}
-          >
-            <Image
-              className="imgg"
-              src="/arrow.gif"
-              width={80}
-              height={80}
-              alt="img"
-            />
-          </ParallaxLayer> */}
         </Parallax>
       </div>
     </>

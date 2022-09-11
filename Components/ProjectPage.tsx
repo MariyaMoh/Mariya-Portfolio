@@ -1,7 +1,7 @@
 import React from 'react';
 import { About } from '../types';
 import styles from './ProjectPage.module.css';
-import Image from 'next/image';
+import Link from 'next/link';
 import { ParallaxLayer } from '@react-spring/parallax';
 import {
   Heading1,
@@ -32,18 +32,29 @@ export default function Projects({ abouts }: { abouts: About[] }) {
             <Heading2 id="Experience">Projects</Heading2>
           </div>
 
-          <div className={styles.MainCon}>
+          <div className={styles.Container}>
             {abouts.map((about) => (
-              <div key={about.id} className={styles.expCards}>
-                <div className={styles.proContainer}>
-                  <img className={styles.imggg} src={about.image.url} alt="d" />
+              <div key={about.id} className={styles.ProjectsCards}>
+                <div className={styles.card}>
+                  <img
+                    className={styles.imggg}
+                    src={about.image.url}
+                    alt="projects images"
+                  />
 
-                  <div className={styles.desc}>
+                  <div className={styles.ProjectInfo}>
                     <Heading3>{about.experienceTitle}</Heading3>
 
-                    <p className={styles.descc}>{about.description}</p>
+                    <p className={styles.description}>{about.description}</p>
                   </div>
-                  <PrimaryButton>Read More</PrimaryButton>
+                  <PrimaryButton>
+                    <Link
+                      href="https://github.com/MariyaMoh?tab=repositories"
+                      target="_blank"
+                    >
+                      Read More
+                    </Link>
+                  </PrimaryButton>
                 </div>
               </div>
             ))}
