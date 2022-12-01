@@ -6,7 +6,7 @@
   padding: 10rem;
 }
 .imgg {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
   width: 7rem;
 }
 
@@ -16,15 +16,16 @@
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
-  /* align-items: flex-end; */
-  /* position: absolute; */
   bottom: 10px;
+  font-size: large;
 }
 .LinkedInLink:hover {
   color: white;
+  text-decoration: underline 3px black;
 }
 .GitHubLink:hover {
   color: white;
+  text-decoration: underline 3px black;
 }
 .footerContainer {
   display: flex;
@@ -35,18 +36,33 @@
   height: 100vh;
 }
 
-/* 
-.GetHover{
-  overflow: hidden;
+.contacttitle {
+  font-weight: 400;
 }
-.GetHover:hover{
-  margin-top: -70px;
-} */
-/* .contacttitle{
 
+@keyframes sway {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
 
- transition: all 0.5s ease 0.5s
-} */
+.star {
+  width: 10rem;
+  left: -3rem;
+  top: -1rem;
+  position: absolute;
+  animation: sway 2.4s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+}
 
 @media screen and (max-width: 600px) {
   .position {
@@ -54,5 +70,17 @@
   }
   .imgg {
     width: 3rem;
+  }
+
+  .star {
+    width: 5rem;
+    left: -3rem;
+    top: -7rem;
+    position: absolute;
+    animation: sway 2.4s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
   }
 }

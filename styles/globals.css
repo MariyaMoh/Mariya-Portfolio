@@ -1,36 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=PT+Sans:wght@700&family=Roboto+Mono&family=Roboto:wght@100&family=Space+Mono&family=Truculenta:opsz,wght@12..72,100&display=swap'); */
-/*
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding: 2rem;
-  margin: 0;
-  font-family: 'Space Mono', monospace;
-  background-color: #F2F2F2;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-body{
-  font-size: 16px;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-
 *,
 *:after,
 *:before {
@@ -42,7 +9,6 @@ body{
 :root {
   --base-font-size: 16;
 
-  /* palette colors */
   --lemon-yellow: #fffd50;
   --light-salmon: #ffa07a;
   --flavescent: #fff38c;
@@ -56,27 +22,5 @@ body{
 
 body {
   font-size: 16px;
-
-  font-family: 'Barlow', sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
-
-.App {
-  /* font-family: 'Barlow', sans-serif; */
-}
-
-
-/* .imgg{
-  background-color: rgb(148, 163, 176);
-  padding-left: 50rem;
-
-} */
-
-
-
-@media screen and (max-width: 600px) {
-  .imgg {
-   
-    padding: 10rem;
-
-
-}}

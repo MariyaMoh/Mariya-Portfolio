@@ -7,7 +7,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { AnimatePresence } from 'framer-motion';
 import Script from 'next/script';
-
 function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     Aos.init({ duration: 2000 });

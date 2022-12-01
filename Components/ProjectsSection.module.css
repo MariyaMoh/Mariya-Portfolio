@@ -1,0 +1,114 @@
+.ProjectsContainer {
+  height: 210vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.projectsMainCard {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 1rem;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+.projectTitle {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.projectCard {
+  display: grid;
+  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+}
+.projectsDescription {
+  padding-top: 1rem;
+  width: 17rem;
+}
+.vazaImg {
+  width: 17rem;
+  border: 1px solid;
+}
+
+.githubLink {
+  float: right;
+  cursor: pointer;
+}
+.githubLink:hover {
+  animation: fadeIn 5s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.prjectsPageLink {
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.prjectsPageLink:hover {
+  text-decoration: underline 2px wavy;
+}
+
+.ProjectHeading {
+  background-color: #3f87a6;
+  color: white;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .ProjectsContainer {
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectsMainCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    gap: 1rem;
+    line-height: 1.5;
+    margin: 3rem;
+  }
+  .vazaImg {
+    width: 33rem;
+    border: 1px solid;
+  }
+
+  .projectsDescription {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 33rem;
+  }
+  .projectTitle {
+    font-size: 2rem;
+  }
+
+  .projectTitle:hover {
+    text-decoration: 5px underline rgb(78, 90, 180);
+  }
+
+  .ProjectHeading {
+    position: relative;
+    left: -395px;
+    background-color: #3f87a6;
+    color: white;
+    padding: 1rem;
+  }
+}

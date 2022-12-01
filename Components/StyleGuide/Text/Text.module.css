@@ -1,6 +1,6 @@
 .heading1 {
   /* font-size: calc(48 / var(--base-font-size) * 1rem); */
-  font-size: clamp(1rem, 7vw, 19rem);
+  font-size: clamp(1rem, 8vw, 19rem);
   line-height: 0.96153846;
 }
 

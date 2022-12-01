@@ -1,0 +1,82 @@
+.NameandPostion {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line1 {
+  font-style: italic;
+}
+
+.line2 {
+  margin-left: 3rem;
+  font-style: italic;
+}
+
+.line4 {
+  margin-left: 3rem;
+}
+
+.star {
+  width: 2.5rem;
+  margin-left: 1.5px;
+
+  animation: sway 2.4s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+.blob {
+  display: none !important;
+}
+
+.position {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linesBox {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .NameandPostion {
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
+
+  .line2 {
+    margin-left: 4rem;
+  }
+
+  .line4 {
+    margin-left: 6rem;
+  }
+  .blob {
+    width: 3rem;
+  }
+  .star {
+    width: 4rem;
+  }
+  .blob {
+    display: inline !important;
+  }
+}

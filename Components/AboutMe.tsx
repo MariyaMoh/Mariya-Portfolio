@@ -5,61 +5,64 @@ import { ParallaxLayer } from '@react-spring/parallax';
 import Image from 'next/image';
 export default function AboutMe() {
   return (
-    <ParallaxLayer
-      speed={1}
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '2rem',
-        alignItems: 'center',
-      }}
-    >
-      <div className={styles.logos}>
-       
-          <Image
-            className="imgg"
-            src="/Node.js_logo.svg"
-            width={100}
-            height={100}
-            alt="img"
-          />
-          <Image
-            className="imgg"
-            src="/Nextjs-logo.svg"
-            width={100}
-            height={100}
-            alt="img"
-          />
-
-          <Image
-            className="imgg"
-            src="/MongoDB_Logo.svg"
-            width={100}
-            height={100}
-            alt="img"
-          />
-
-          <Image
-            className="imgg"
-            src="/react-Logo.svg"
-            width={100}
-            height={100}
-            alt="img"
-          />
-       
-      </div>
-      <div className={styles.container}>
-        <div className={styles.AboutMeTitle}>
-          <Heading2>About Me</Heading2>
+    <div className={styles.mainCointainer}>
+      {/* <div className={styles.AboutMeTitle}>
+        <Heading2>About Me</Heading2>
+      </div> */}
+      <div className={styles.aboutMePage} id="AboutMe">
+        {/* <div className={styles.boxRed}></div>
+        <div className={styles.boxGreen}></div>
+        <div className={styles.boxBlue}></div> */}
+        <div className={styles.aboutMeLines}>
+          <p>
+            <span className={styles.line1}>
+              Hi <b>~</b>
+            </span>{' '}
+            <br />
+            <span className={styles.line2} data-aos="fade-right">
+              I am{' '}
+              <span className={styles.myName}>
+                {'  '}
+                <b>Mariya</b>{' '}
+              </span>{' '}
+              <img className={styles.star} src="/Star_red.svg" alt="" />
+            </span>{' '}
+            <br />
+            <span className={styles.line4} data-aos="fade-right">
+              a creative
+            </span>{' '}
+            <br />
+            <span className={styles.line5} data-aos="fade-right">
+              <b>Front-end developer</b>
+            </span>
+            <img className={styles.blob} src="/blob1.svg" alt="" />
+            <br />{' '}
+            <span className={styles.line6} data-aos="fade-right">
+              <b>Passionate </b>about
+            </span>{' '}
+            <br />{' '}
+            <span className={styles.line7} data-aos="fade-right">
+              learning <b> &</b> consistently{' '}
+            </span>
+            <br />
+            <span className={styles.line8} data-aos="fade-right">
+              {' '}
+              <img className={styles.blob} src="/blob4.svg" alt="" />
+              advancing my{' '}
+            </span>{' '}
+            <br />
+            <span className={styles.line9} data-aos="fade-right">
+              knowledge <b>&</b> skills.
+            </span>
+          </p>
         </div>
-
-        <p>
-          Hey ! I ma Mariya , highly-motivated and creative software developer
-          with robust problem-solving skills. Passionate about learning and
-          consistently advancing my knowledge and skills.
-        </p>
+        <div className={styles.Blob1}> </div>
+        <div className={styles.OutlineBlob1}> </div>
+        <div className={styles.OutlineBlob12}> </div>
+        <div className={styles.Blob2}> </div>
+        <div className={styles.OutlineBlob2}> </div>
+        <div className={styles.OutlineBlob22}> </div>
       </div>
-    </ParallaxLayer>
+    </div>
   );
 }

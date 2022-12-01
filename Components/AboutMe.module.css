@@ -1,36 +1,283 @@
-.container {
-  background-color: #ffdeb4;
+.aboutMePage {
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  margin: 15rem;
+  /* background-color: aqua; */
+  /* margin-top: 19rem; */
 }
-
 .AboutMeTitle {
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
-.logos {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-  align-items: center;
-  gap: 2rem;
+.aboutMeLines {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
 }
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 1rem;
-    padding: 2rem;
+.star {
+  width: 30px;
+}
+.blob {
+  width: 30px;
+}
+.line1 {
+  margin-left: 2rem;
+}
+.line2 {
+  margin-left: 2rem;
+}
+
+.myName {
+  font-style: italic;
+  background-color: #3f87a6;
+  color: white;
+}
+
+.line4 {
+  margin-left: 2rem;
+}
+.line5 {
+  margin-left: 2rem;
+  font-style: italic;
+  background-color: #3f87a6;
+  color: white;
+}
+.line6 {
+  margin-left: 2rem;
+}
+.line7 {
+  margin-left: 2rem;
+}
+.line8 {
+  margin-left: 2rem;
+}
+.line9 {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutMeLines {
+    font-size: 3rem;
   }
-  .logos {
+  .aboutMePage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    align-items: flex-start;
+    padding: 3rem;
+  }
+  .star {
+    width: 50px;
+  }
+  .blob {
+    width: 50px;
+  }
+  .line1 {
+    margin-right: 10rem;
+  }
+  .line2 {
+    margin-left: 2rem;
+  }
+
+  .line4 {
+    margin-left: 2rem;
+  }
+  .line5 {
+    margin-left: 2rem;
+  }
+  .line6 {
+    margin-left: 2rem;
+  }
+  .line7 {
+    margin-left: 2rem;
+  }
+  .line8 {
+    margin-left: 2rem;
+  }
+  .line9 {
+    margin-left: 2rem;
+  }
+
+  .boxRed {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    background-color: rgb(255, 224, 46);
+    right: 2.5rem;
+    top: 60rem;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+
+    /* transform: rotate(-90deg); */
+  }
+
+  .boxGreen {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    background-color: rgb(56, 255, 46);
+    right: 2.5rem;
+    top: 75.5rem;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 100rem;
+  }
+  .boxBlue {
+    width: 12rem;
+    height: 15rem;
+    position: absolute;
+    background-color: rgb(18, 67, 136);
+    right: 2.5rem;
+    top: 100rem;
+    border-top-right-radius: 10rem;
+    border-top-left-radius: 10rem;
+    transform: rotate(-90deg);
+  }
+
+  .blob1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 1rem;
+    top: 62rem;
+  }
+  .blob2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 15rem;
+    top: 78rem;
+  }
+  .blob3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 1rem;
+    top: 75rem;
+  }
+  .blob4 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 15rem;
+    top: 75rem;
+  }
+  .inBlob {
+    color: blue;
+    position: absolute;
+    top: 10rem;
+  }
+  .Blob1 {
+    width: 200px;
+    height: 200px;
+    background: #3f87a6;
+    background-size: 1600% 1600%;
+    position: absolute;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1;
+    right: 7rem;
+    bottom: -20rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+
+  .OutlineBlob1 {
+    width: 210px;
+    height: 210px;
+    right: 7rem;
+    bottom: -35rem;
+    border: 2px solid rgb(255, 115, 113);
+    background-size: 1600% 1600%;
+    position: absolute;
+    pointer-events: none;
+    right: 7rem;
+    bottom: -20rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+
+  @keyframes blobRadius {
+    0%,
+    100% {
+      border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
+    }
+    20% {
+      border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
+    }
+    40% {
+      border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%;
+    }
+    60% {
+      border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%;
+    }
+    80% {
+      border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
+    }
+  }
+
+  .Blob2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(0.75turn, #3f87a6, #ff2525, #f6ed3c);
+    background-size: 1600% 1600%;
+    position: absolute;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1;
+    right: 18rem;
+    bottom: -30rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+
+  .OutlineBlob12 {
+    width: 215px;
+    height: 215px;
+    right: 7rem;
+    bottom: -35rem;
+    border: 2px solid rgb(255, 115, 113);
+    background-size: 1600% 1600%;
+    position: absolute;
+    pointer-events: none;
+    right: 7rem;
+    bottom: -21rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+
+  .OutlineBlob2 {
+    width: 210px;
+    height: 210px;
+    right: 4rem;
+    bottom: -35rem;
+    border: 2px solid rgb(250, 178, 21);
+    background-size: 1600% 1600%;
+    position: absolute;
+    pointer-events: none;
+    right: 18rem;
+    bottom: -30rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+  .OutlineBlob22 {
+    width: 215px;
+    height: 215px;
+    right: 4rem;
+    bottom: -35rem;
+    border: 2px solid rgb(250, 178, 21);
+    background-size: 1600% 1600%;
+    position: absolute;
+    pointer-events: none;
+    right: 18rem;
+    bottom: -31rem;
+    transition: 0.15s linear;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+  }
+
+  .aboutMeLines {
+    padding-left: 3rem;
   }
 }
