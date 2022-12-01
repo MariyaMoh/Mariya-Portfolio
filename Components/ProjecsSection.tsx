@@ -52,7 +52,7 @@ export default function ProjectsSection() {
           </p>
           <img
             className={styles.vazaImg}
-            src="/t-devgame.png"
+            src="/t-devGame.png"
             data-aos="zoom-in"
           />
 
