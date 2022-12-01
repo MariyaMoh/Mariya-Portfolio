@@ -3,16 +3,8 @@ import { About } from '../types';
 import styles from './ProjectPage.module.css';
 import Link from 'next/link';
 import { ParallaxLayer } from '@react-spring/parallax';
-import {
-  Heading1,
-  Heading2,
-  Heading3,
-  Heading4,
-  SectionTitle,
-} from './StyleGuide/Text';
-import { Container } from './StyleGuide/Container';
+import { Heading2, Heading3 } from './StyleGuide/Text';
 
-import { motion } from 'framer-motion';
 import { PrimaryButton } from './StyleGuide/Button';
 export default function Projects({ abouts }: { abouts: About[] }) {
   return (

@@ -1,13 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './HeroPage.module.css';
-import {
-  Heading1,
-  Heading2,
-  Heading3,
-  Heading4,
-  SectionTitle,
-} from './StyleGuide/Text';
+import { Heading1, Heading4 } from './StyleGuide/Text';
 
 import { ParallaxLayer } from '@react-spring/parallax';
 export default function HeroPage() {
@@ -22,9 +16,9 @@ export default function HeroPage() {
           alignItems: 'center',
         }}
       >
-        <div className={styles.name}>
+        <header className={styles.name}>
           <Heading4 as="h1">Mariya ALShaaibi</Heading4>
-        </div>
+        </header>
         <Heading1>Front-end Developer</Heading1>
       </ParallaxLayer>
       <ParallaxLayer

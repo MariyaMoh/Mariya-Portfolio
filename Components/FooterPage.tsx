@@ -29,18 +29,20 @@ export default function FooterPage() {
             </span>
           </Link>
         </div>
-        <div className={styles.links}>
+
+        <footer className={styles.links}>
           <div className={styles.LinkedInLink}>
             <Link href="https://www.linkedin.com/in/mariya-alshaaibi-b6121a1a4/">
               <Heading4>LinkedIn</Heading4>
             </Link>
           </div>
+
           <div className={styles.GitHubLink}>
             <Link href="https://github.com/MariyaMoh">
               <Heading4>GitHub</Heading4>
             </Link>
           </div>
-        </div>
+        </footer>
       </div>
     </ParallaxLayer>
   );
