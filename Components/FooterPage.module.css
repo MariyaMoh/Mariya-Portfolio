@@ -20,11 +20,9 @@
   font-size: large;
 }
 .LinkedInLink:hover {
-  color: white;
   text-decoration: underline 3px black;
 }
 .GitHubLink:hover {
-  color: white;
   text-decoration: underline 3px black;
 }
 .footerContainer {
